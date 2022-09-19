@@ -12,6 +12,10 @@
             padding: 0px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        ::-webkit-scrollbar { /* isso esconde a barra de rolagem*/
+            width: 0px;
+            height: 0px;
+        }
         html, body {
             height: 100vh;
             width: 100vw;
@@ -55,7 +59,7 @@
         section#redes-sociais img:hover {
             border: 2px solid rgba(255, 255, 255, 0.486);
             transform: translate(-3px, -3px);
-            transition: transform .5s, border 1s;
+            transition: transform .5s, border .7s;
         }
     </style>
 </head>
@@ -65,12 +69,12 @@
             <iframe src="home.html" name="tela"></iframe>
         </section>
         <section id="redes-sociais">
-            <a href="#" target="tela"><img src="imagens/logo-home.jpg" alt="home"><br></a>
-            <a href="#" target="tela"><img src="imagens/logo-youtube.jpg" alt="youtube"><br></a>
-            <a href="#" target="tela"><img src="imagens/logo-github.jpg" alt="github"><br></a>
-            <a href="#" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"><br></a>
-            <a href="#" target="tela"><img src="imagens/logo-twitter.jpg" alt="twiter"><br></a>
-            <a href="#" target="tela"><img src="imagens/logo-facebook.jpg" alt=""><br></a>
+            <a href="home.html" target="tela"><img src="imagens/logo-home.jpg" alt="home"><br></a>
+            <a href="youtube.html" target="tela"><img src="imagens/logo-youtube.jpg" alt="youtube"><br></a>
+            <a href="github.html" target="tela"><img src="imagens/logo-github.jpg" alt="github"><br></a>
+            <a href="instagram.html" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"><br></a>
+            <a href="twiter.html" target="tela"><img src="imagens/logo-twitter.jpg" alt="twiter"><br></a>
+            <a href="facebook.html" target="tela"><img src="imagens/logo-facebook.jpg" alt=""><br></a>
         </section>
     </main>
 </body>
