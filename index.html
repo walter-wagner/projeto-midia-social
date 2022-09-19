@@ -19,7 +19,7 @@
         body{
             background: url('imagens/fundo-madeira.jpg') no-repeat top center;
             background-size: cover;
-            background-attachment: fixed;
+            background-attachment: scroll;
         }
         main {
             position: relative;
@@ -42,6 +42,21 @@
             height: 469px;
             width: 265px;
         }
+        section#redes-sociais img {
+            width: 50px;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.473);
+            box-sizing: border-box;
+        }
+        section#redes-sociais {
+            text-align: right;
+        }
+        section#redes-sociais img:hover {
+            border: 2px solid rgba(255, 255, 255, 0.486);
+            transform: translate(-3px, -3px);
+            transition: transform .5s, border 1s;
+        }
     </style>
 </head>
 <body>
@@ -50,7 +65,12 @@
             <iframe src="home.html" name="tela"></iframe>
         </section>
         <section id="redes-sociais">
-
+            <a href="#" target="tela"><img src="imagens/logo-home.jpg" alt="home"><br></a>
+            <a href="#" target="tela"><img src="imagens/logo-youtube.jpg" alt="youtube"><br></a>
+            <a href="#" target="tela"><img src="imagens/logo-github.jpg" alt="github"><br></a>
+            <a href="#" target="tela"><img src="imagens/logo-instagram.jpg" alt="instagram"><br></a>
+            <a href="#" target="tela"><img src="imagens/logo-twitter.jpg" alt="twiter"><br></a>
+            <a href="#" target="tela"><img src="imagens/logo-facebook.jpg" alt=""><br></a>
         </section>
     </main>
 </body>
