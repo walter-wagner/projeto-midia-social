@@ -7,17 +7,51 @@
     <link rel="shortcut icon" href="favicon.icon" type="image/x-icon">
     <title>Midia Social</title>
     <style>
-        section {
-            background-image: url('imagens/fundo-madeira.jpg');
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        html, body {
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            background: url('imagens/fundo-madeira.jpg') no-repeat top center;
+            background-size: cover;
+            background-attachment: fixed;
         }
         main {
-            background-image: url('imagens/frame-iphone.png');
+            position: relative;
+            height: 100vh;
+
+        }
+        section#telefone {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 627px;
+            width: 311px;
+            background: url('imagens/frame-iphone.png') no-repeat;
+        }
+        iframe {
+            position: relative;
+            top: 80px;
+            left: 22px;
+            height: 469px;
+            width: 265px;
         }
     </style>
 </head>
 <body>
-    <section>
-        
-    </section>
+    <main>
+        <section id="telefone">
+            <iframe src="home.html" name="tela"></iframe>
+        </section>
+        <section id="redes-sociais">
+
+        </section>
+    </main>
 </body>
 </html>
